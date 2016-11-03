@@ -39,3 +39,9 @@ Após a instalação do Chrome 200 OK Web Server, certifique-se de que as config
 Após configurar o Web Server acesse a seguinte url: http://127.0.0.1:8000/materia.html
 
 ## AMP na prática
+
+## Referências
+
+### Google - Code Labs
+* Conceitos básicos: https://codelabs.developers.google.com/codelabs/accelerated-mobile-pages-foundations/index.html?index=..%2F..%2Findex#0
+* Conceitos Avançados: https://codelabs.developers.google.com/codelabs/accelerated-mobile-pages-advanced/index.html?index=..%2F..%2Findex#0
