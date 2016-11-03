@@ -34,7 +34,7 @@ Os testes serão realizados no Google Chrome e precisamos rodar o nosso código 
 
 Após a instalação do Chrome 200 OK Web Server, certifique-se de que as configurações estejam da seguinte forma:
 
-![alt tag](http://url/to/img.png)
+![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/chrome_web_server_configurations.png)
 
 O diretório do Web Server deve ser o diretório do código fonte de exemplo.
 
