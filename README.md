@@ -53,10 +53,11 @@ ATENÇÃO: Não há nenhuma regra para nomenclatura do documento amp. Ele pode s
 ```shell
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 ```
+![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/amp_js_library.png)
 
+* Adicinar fragmento #development=1 à url para acionar o validador AMP ao código
+![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/amp_validator.png)
 
-
-- Adicinar fragmento #developer=1 para acionar o validador AMP ao código
 
 - Corrigir os erros apontados pelo validador AMP
   - Adicionar o atributo ⚡ à tag <html> para sinalizar que o documento é um documento AMP.
