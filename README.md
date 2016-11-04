@@ -1,7 +1,7 @@
 # amp-techtalk
 > Projeto construido para techtalk sobre AMP (Accelerated Mobile Pages) -  Editora Globo | InfoGlobo
 
-## AMP (Accelerated Mobile Pages) https://www.ampproject.org/
+## AMP (Accelerated Mobile Pages) ⚡ https://www.ampproject.org/
 
 É uma iniciativa open source do Google para distruibuição de conteúdo otimizado para dispositivos móveis, a fim de tornar a experiência do usuário o mais agradável possível.
 
@@ -41,10 +41,10 @@ Após configurar o Web Server acesse a seguinte url: http://127.0.0.1:8000/mater
 
 ## AMP na prática
 
-Vamos criar um novo arquivo chamado materia.amp.html que será a representação amp da matéria original contida no arquivo materia.html.
+Vamos criar um novo arquivo chamado materia.amp.html que será a representação ⚡ da matéria original contida no arquivo materia.html.
 
 ```shell
-ATENÇÃO: Não há nenhuma regra para nomenclatura do documento amp. Ele pode ser nomeado de acordo com a preferência de cada publisher.
+ATENÇÃO: Não há nenhuma regra para nomenclatura do documento ⚡. Ele pode ser nomeado de acordo com a preferência de cada publisher.
 ```
 
 ### Criando documento AMP Step-by-step
@@ -55,15 +55,32 @@ ATENÇÃO: Não há nenhuma regra para nomenclatura do documento amp. Ele pode s
 ```
 ![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/amp_js_library.png)
 
-* Adicinar fragmento #development=1 à url para acionar o validador AMP ao código
+* Adicionar fragmento #development=1 à url para acionar o validador AMP ao código
 ![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/amp_validator.png)
 
+* Adicionar o atributo ⚡ à tag <html> para sinalizar que o documento é um documento AMP.
+```shell
+<html ⚡ lang="pt-br">
+```
+![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/amp_tag_html.png)
 
-- Corrigir os erros apontados pelo validador AMP
-  - Adicionar o atributo ⚡ à tag <html> para sinalizar que o documento é um documento AMP.
-  - Adicionar meta charset="utf-8"
-  - Adicionar link rel="canonical": nada mais é que o link para a matéria original. Caso seja um projeto AMP standalone, ou seja, só possuo a versão AMP da matéria o canonical link deve ser a própria matéria amp.
-  - Adicionar a meta tag viewport. Isso já é uma exigência sempre que desenvolvemos html para dispositivos móveis, pois, é essa tag que diz para o browser mobile como nosso html deve ser exibido. Sem essa tag o html é exibido como se fosse para um desktop.
+* Adicionar meta charset="utf-8"
+```shell
+<meta charset="utf-8" />
+```
+![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/meta_charset_utf8.png)
+
+* Adicionar 'link rel=canonical' que corresponde à referência, link, para a matéria original (no caso materia.html).
+```shell
+<link rel="canonical" href="/materia.html">
+```
+![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/link_rel_canonical.png)
+
+* Adicionar a meta tag viewport. Isso já é uma exigência sempre que desenvolvemos html para dispositivos móveis, pois, é essa tag que diz para o browser mobile como nosso html deve ser exibido. Sem essa tag o html é exibido como se fosse para um desktop.
+```shell
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+```
+![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/meta_viewport.png)
 
   - css externo não é permitido. O propósito do AMP é oferecer uma experiência agradável para o usuário e um ponto importante para que isso seja possível é a performance. O carregamento da matéria deve ser rápido, então, não é permitido a inclusão de um css externo, o css deve ser inline no próprio html.
      (Atenção para o tamanho máximo permitido de 50KB - sugestão é utilizar minificadores de css)
