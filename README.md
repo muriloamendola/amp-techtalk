@@ -7,9 +7,10 @@
 
 ### Benefícios - publishers
 
-* Obviamente além de oferecer uma experiência de consumo mais agradável para os usuários, o Google irá privilegiar, nos resultados das buscas, os publishers que utilizarem essa tecnologia.
+* Carregamento "instantâneo" do conteúdo para gerar engajamento dos usuários
 * Possibilidade de ter o conteúdo exposto no novo carrossel de resultados.
 * Aumento de audiência proveniente de busca orgânica.
+* Google AMP Cache - economia de recursos de Infra Estrutura
 
 ## Getting started
 
