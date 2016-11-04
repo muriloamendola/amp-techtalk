@@ -47,11 +47,17 @@ Vamos criar um novo arquivo chamado materia.amp.html que será a representação
 ATENÇÃO: Não há nenhuma regra para nomenclatura do documento ⚡. Ele pode ser nomeado de acordo com a preferência de cada publisher.
 ```
 
-### Criando documento AMP Step-by-step
+### Transformando materia.html em um documento AMP
 
 * Adicionar AMP javascript library (checar Chrome console)
 ```shell
-<script async src="https://cdn.ampproject.org/v0.js"></script>
+<head>
+  ...
+
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  ...
+</head>
 ```
 ![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/amp_js_library.png)
 
@@ -66,19 +72,33 @@ ATENÇÃO: Não há nenhuma regra para nomenclatura do documento ⚡. Ele pode s
 
 * Adicionar meta charset="utf-8"
 ```shell
-<meta charset="utf-8" />
+<head>
+  <meta charset="utf-8" />
+
+  ...
+</head>
 ```
 ![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/meta_charset_utf8.png)
 
 * Adicionar 'link rel=canonical' que corresponde à referência, link, para a matéria original (no caso materia.html).
 ```shell
-<link rel="canonical" href="/materia.html">
+<head>
+  <meta charset="utf-8" />
+  <link rel="canonical" href="/materia.html">
+
+  ...
+</head>
 ```
 ![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/link_rel_canonical.png)
 
 * Adicionar a meta tag viewport. Isso já é uma exigência sempre que desenvolvemos html para dispositivos móveis, pois, é essa tag que diz para o browser mobile como nosso html deve ser exibido. Sem essa tag o html é exibido como se fosse para um desktop.
 ```shell
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+  ...
+</head>
 ```
 ![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/meta_viewport.png)
 
