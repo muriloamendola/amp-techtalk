@@ -168,6 +168,69 @@ http://127.0.0.1:8000/materia.amp.html#development=1
 ```
 ![alt tag](https://raw.githubusercontent.com/mcamendola/amp-techtalk/master/tutorial/amp_img.png)
 
+## Best Practices (para que as matérias apareçam no carrossel de resultados)
+
+https://www.ampproject.org/docs/guides/discovery
+
+* Link canonical bidirecional (garantir que não são duas matérias falando da mesma coisa)
+* Search Engine Meta Data para auxiliar os mecanismos de busca a entender o nosso conteúdo. No AMP temos de adicionar um script no formato application/ld+json na tag head.
+
+## AMP Custom Components (https://www.ampproject.org/docs/reference/components)
+
+### amp-ad
+
+* Adicionar javascript library do component amp-ad
+```shell
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+```
+* Uma vez adicionada a library javascript do component, já é possível fazer uso da tag amp-ad
+```shell
+<amp-ad width="300"
+        height="250"
+        type="doubleclick"
+        data-slot="/35096353/amptesting/image/static">
+</amp-ad>
+```
+
+### amp-youtube
+
+* Adicionar javascript library do component amp-youtube
+```shell
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+```
+* Uma vez adicionada a library javascript do component, já é possível fazer uso da tag amp-youtube
+```shell
+<amp-youtube data-videoid="lBTCB7yLs8Y"
+             layout="responsive"
+             width="480"
+             height="270">
+  <div fallback>
+    <p>Este vídeo não pode ser carregado.</p>
+  </div>
+</amp-youtube>
+```
+
+### amp-carousel
+
+* Adicionar javascript library do component amp-carousel
+```shell
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+```
+* Uma vez adicionada a library javascript do component, já é possível fazer uso da tag amp-carousel
+```shell
+<amp-carousel layout="fixed-height" height="168" type="carousel" >
+  <amp-img src="img/mountains-1.jpg" width="300" height="168"></amp-img>
+  <amp-img src="img/mountains-2.jpg" width="300" height="168"></amp-img>
+  <amp-img src="img/mountains-3.jpg" width="300" height="168"></amp-img>
+</amp-carousel>
+```
+
+* Outros exemplos de código e AMP components podem ser encontrados no site https://ampbyexample.com/
+
+## Wordpress plugin para AMP
+
+https://wordpress.org/plugins/amp/
+
 ## Referências
 
 ### Google - Code Labs
